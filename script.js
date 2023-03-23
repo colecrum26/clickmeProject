@@ -8,3 +8,4 @@ function changeColor() {
         box.style.background = 'green';
     }
 }
+changeColor();
