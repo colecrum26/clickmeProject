@@ -1,9 +1,13 @@
 #clickMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 250px;
     height: 250px;
     margin: 20px;
-    background: green;
     margin: 20px auto;
+    color: white;
+    font-weight: normal;
 }
 
 body {  

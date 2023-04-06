@@ -1,11 +1,10 @@
 var button = document.querySelector("button");
 var box = document.getElementById("clickMe");
 
-function changeColor() {
-    if(box.style.background == 'green'){
-        box.style.background = 'blue';
-    }else{
-        box.style.background = 'green';
-    }
+const changeColor = () => { 
+    const randomColor = Math.floor(Math.random()*16777215).toString(16);
+    box.style.backgroundColor = "#" + randomColor;
+    clickMe.innerHTML = "#" + randomColor;
 }
-changeColor();
+
+button.addEventListener("click", changeColor);
